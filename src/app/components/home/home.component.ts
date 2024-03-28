@@ -48,6 +48,6 @@ export class HomeComponent {
   };
 
   redirectToProfil = () => {
-    window.location.href = '#profil';
+    window.location.href = '#about';
   };
 }

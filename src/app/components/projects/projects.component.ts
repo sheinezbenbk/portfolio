@@ -71,4 +71,9 @@ export class ProjectsComponent {
   projectThree = () => {
     window.open(environment.projectThree, '_blank');
   };
+
+  ProjectQuatre = () => {
+    window.open(environment.quatreProject,'_blank' )
+  }
+
 }
