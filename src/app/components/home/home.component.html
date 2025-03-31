@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="homeContainer">
+    <div class="socialIcons" *ngIf="isMobile">
+
+     
+
+    </div>
+    <div class="homeContent">
+      <h1 class="name" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Sheinez Ben Boubaker </h1>
+      <div class="info">
+        <p>
+          Étudiante en informatique
+        </p>
+      </div>
+      <div class="btn">
+        <button (click)="redirectToProfil()"><span></span> Profil</button>
+      </div>
+    </div>
+    <div class="email" *ngIf="isMobile">
+      <a href="mailto:jondoa@gmail.com">sheinezbenbk&#64;gmail.com</a>
+    </div>
+    <div class="scrollDown" (click)="redirectToProfil()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</div>

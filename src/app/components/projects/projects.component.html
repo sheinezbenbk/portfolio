@@ -1,0 +1,104 @@
+<div class="container">
+  <div class="projectContainer">
+    <h2 class="heading">
+      <span class="headingMain" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">Projets</span>
+      <span class="headingSub" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Projets Vous trouverez ici les projets réalisés au cours de ma formation sur lesquels j'ai travaillé, avec leur
+        code source.
+
+      </span>
+    </h2>
+
+    <app-project-items Responsive>
+      <img src="../../../assets/img/berimbau.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Carte intéractive : Bérimbau </h3>
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Site web avec une carte interactive et une navigation dynamique interactif pour présenter le berimbau en 3D.
+
+      </p>
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of firstPoject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="projectOne()">
+        Lien
+      </button>
+    </app-project-items>
+
+    <app-project-items Responsive>
+      <img src="../../../assets/img/saz-drive.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        SAZ'DRIVE </h3>
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Plateforme de suivi des résultats d'entraînement au code de la route pour les élèves et de
+        gestion des formations pour les auto-écoles.
+      </p>
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of secoundProject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="projectTwo()">
+        Lien
+      </button>
+    </app-project-items>
+
+    <app-project-items Responsive>
+      <img src="../../../assets/img/ordiKotl.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Jeu de Rôle </h3>
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        En équipe, avec la découverte de Kotlin nous avons procédés à la création d'un jeu tour par tour.
+      </p>
+
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of thirdProject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="projectThree()">
+        Lien
+      </button>
+    </app-project-items>
+
+
+
+
+    <app-project-items Responsive>
+      <img src="../../../assets/img/ordisush.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Sushis APP </h3>
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+
+        Projet le plus récent de la formation, nous devions créer une application de commande pour sushis avec Angular.
+      </p>
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of quatreProject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="ProjectQuatre()">
+        Lien
+      </button>
+    </app-project-items>
+
+
+
+  </div>
+</div>
