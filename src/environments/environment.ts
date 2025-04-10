@@ -21,6 +21,6 @@ export const environment = {
 
   projectOne: 'https://github.com/sheinezbenbk/SAE402-Berimbau',
   projectTwo: 'https://github.com/sheinezbenbk/saz-drive',
-  projectThree: 'https://github.com/sheinezbenbk/JeuDeRole-Sprint4',
+  projectThree: 'https://github.com/sheinezbenbk/JeuDeRole',
   quatreProject: 'https://github.com/sheinezbenbk/Sushi-App', 
 };
