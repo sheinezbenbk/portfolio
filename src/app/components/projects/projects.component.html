@@ -1,0 +1,143 @@
+<div class="container">
+  <div class="projectContainer">
+    <h2 class="heading">
+      <span class="headingMain" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">Projets</span>
+      <span class="headingSub" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Projets Vous trouverez ici les projets réalisés au cours de ma formation sur lesquels j'ai travaillé, avec leur
+        code source.
+
+      </span>
+    </h2>
+
+    <!-- PROJET 1  -->
+    <app-project-items Responsive>
+      <img src="./assets/img/formation.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Tritech : Plateforme de formation </h3>
+
+
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Plateforme de formation informatique en ligne, avec gestion des cours, des utilisateurs et
+        des progrès. 
+      </p>
+
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of projectFive">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="ProjetFive()">
+        lien
+      </button>
+    </app-project-items>
+
+
+    <!-- PROJET 2  -->
+    <app-project-items Responsive>
+      <img src="./assets/img/berimbau.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Carte intéractive : Bérimbau </h3>
+
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Réalisation d’un site web avec une carte interactive et une navigation dynamique interactif pour présenter le berimbau en 3D.
+        
+        <br> <br>
+        <a href="https://sheinezbenbk.github.io/SAE402-Berimbau/" target="_blank" rel="noopener noreferrer"
+          style="color:#3f51b5; text-decoration:none; font-weight:500; cursor:pointer;"
+          onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+          Visiter le site Bérimbau <span style="font-size:0.8em; margin-left:6px;">↗</span>
+    </a>
+      </p>
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of firstPoject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="projectOne()">
+        lien
+      </button>
+    </app-project-items>
+
+
+    <!-- PROJET 3  -->
+    <app-project-items Responsive>
+      <img src="./assets/img/saz-drive.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        SAZ'DRIVE </h3>
+      
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Plateforme de suivi des résultats d'entraînement au code de la route pour les élèves et de
+        gestion des formations pour les auto-écoles.
+      </p>
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of secoundProject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="projectTwo()">
+        Lien
+      </button>
+    </app-project-items>
+
+
+    <!-- PROJET 4  -->
+    <app-project-items Responsive>
+      <img src="./assets/img/ordiKotl.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Jeu de Rôle </h3>
+
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        En équipe, avec la découverte de Kotlin nous avons procédés à la création d'un jeu tour par tour.
+      </p>
+
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of thirdProject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="projectThree()">
+        Lien
+      </button>
+    </app-project-items>
+
+
+
+    <!-- PROJET 5  -->
+    <app-project-items Responsive>
+      <img src="./assets/img/ordisush.png" alt="Software Screenshot" class="projectsRowImg" loading="lazy" />
+      <h3 class="projectsRowContentTitle" data-aos="fade-down-left" data-aos-delay="120" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Sushis APP </h3>
+
+      <p class="projectsRowContentDesc" data-aos="fade-left" data-aos-delay="150" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        Création d'une application de commande pour sushis avec Angular.
+      </p>
+      <div class="tools" data-aos="zoom-in-left" data-aos-delay="190" data-aos-duration="500"
+        data-aos-easing="ease forwards" data-aos-offset="100" data-aos-once="true">
+        <div class="toolsName" *ngFor="let tools of quatreProject">
+          {{ tools.name | uppercase }}
+        </div>
+      </div>
+      <button mat-raised-button class="livBtn" (click)="ProjectQuatre()">
+        Lien
+      </button>
+    </app-project-items>
+
+
+  </div>
+</div>
